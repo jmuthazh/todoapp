@@ -10,9 +10,10 @@ Technology:
 
 Application Developed in Spring Boot
 
-Project Name:Todo Application
+#Project Name:#
+Todo Application
 
-Problem Statement:
+#Problem Statement:#
 Workfront Engineering Take-Home Assessment
 
 We would like you to build a To-Do list application. With this application, I should be able to create various lists of work items. For example, I could create a grocery list, a home repair list, or a list of books to read. I should be able to add or remove items from any list at any time. I should also be able to mark items complete.
@@ -25,19 +26,19 @@ You will be asked about various aspects of your solution, such as scalability, p
 
 
 
-Steps to run:
--mvn clean install
--java -jar todoapp-0.0.1-SNAPSHOT.jar
+##Steps to run:##
+- mvn clean install
+- java -jar todoapp-0.0.1-SNAPSHOT.jar
 
 (or)
 
 execute main method from SpringBoot java class:
-/todoapp/src/main/java/com/workfront/todo/SpringBoot.java
+- /todoapp/src/main/java/com/workfront/todo/SpringBoot.java
 
 
-Developer:
+##Developer:##
 Jayakesavan Muthazhagan
 
 
-Last Update:
+#Last Update:#
 May 3, 2019

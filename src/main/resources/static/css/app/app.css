@@ -1,0 +1,12 @@
+body{
+    background-color: #a7efcb;
+}
+span.spacing{
+    margin-right: 10px;
+}
+input.custom-width{
+    width: 200px;
+}
+input.spacing{
+    margin-right: 5px;
+}

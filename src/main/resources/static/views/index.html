@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Todo Application</title>
+</head>
+<body ng-app="todo">
+<hr/>
+<div class="container" ng-controller="TodoController">
+    <div class="row">
+        <label>Todo Item:</label> <input type="text" ng-model="item" class="input-sm spacing"/>
+        
+        <button ng-click="addTodo()" class="btn btn-sm btn-info" ng-disabled="item == null">Add Item</button>
+        <!-- <button ng-click="clearAll()" class="btn btn-sm btn-info" >Clear All Items</button> -->
+    </div>
+    <hr/>
+   
+   <button ng-click="displayTodo()" class="btn btn-sm btn-info" >Display Todo List</button>
+     <table class="table table-striped" >
+     <tbody>
+        <tr class="" ng-repeat="x in itemslist">
+           <td>{{$index+1}}</td> <td>{{x}}</td><td><button ng-click="removeTodo(x)" type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-trash"></span> Trash 
+        </button></td>
+      
+            
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/lib/angular.min.js"></script>
+<script src="js/lib/ui-bootstrap-tpls-2.5.0.min.js"></script>
+<script src="js/app/app.js"></script>
+<script src="js/app/TodoController.js"></script>
+<script src="js/app/TodoService.js"></script>
+<link rel="stylesheet" href="css/lib/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/app/app.css"/>
+</html>
